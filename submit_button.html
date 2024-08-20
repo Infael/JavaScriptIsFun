@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="myForm" onsubmit="submitHandler(event)">
+      <label for="inputField">Input:</label>
+      <input type="text" id="inputField" name="inputField" />
+
+      <button
+        id="myButton"
+        class="btn"
+        name="actionButton"
+        value="clickValue"
+        type="button"
+        title="Click this button"
+        style="background-color: blue; color: white"
+      >
+        Click Me
+      </button>
+    </form>
+
+    <script>
+      function submitHandler(e) {
+        e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+        alert(formData.get("inputField"));
+      }
+    </script>
+  </body>
+</html>
+
+<!-- Solution: type="button" does not submit the form. Use type="submit" instead. -->
