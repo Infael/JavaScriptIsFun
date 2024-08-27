@@ -74,5 +74,5 @@ const compile = (code) =>
 
 console.log(compile('console.log("Hello World!")'));
 
-// debugger;
+debugger;
 

@@ -1,9 +1,3 @@
-// What gets logged?
-
-for (var i = 0; i < 5; i++) {
-  setTimeout(() => console.log(i), i * 1000);
-}
-
 /*
 This used to be everyone’s favorite JavaScript interview question.
 
@@ -14,4 +8,3 @@ By the time our functions given to setTimeout run, i will already be 5 and every
 
 To fix this, use let which is block scoped and will give each iteration of our for loop its own i.
 */
-
