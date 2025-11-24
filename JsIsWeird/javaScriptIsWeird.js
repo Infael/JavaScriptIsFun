@@ -23,9 +23,9 @@ const map = {};
 
 // x+[] will make x string
 
-// NaN !{}+[]
+// NaN +{}+[]
 map.a = `(+{}+[])[${number(1)}]`;
-// [Object object] ![]+[]
+// [Object object] {}+[]
 map.b = `({}+[])[${number(2)}]`;
 map.o = `({}+[])[${number(1)}]`;
 map.e = `({}+[])[${number(4)}]`;
@@ -41,6 +41,7 @@ map.r = `(!![]+[])[${number(1)}]`;
 map.u = `(!![]+[])[${number(2)}]`;
 
 // Infinity (+!![]/+[])+[]
+// (we can use "+(+!+[]+(!+[]+[])[!+[]+!+[]+!+[]]+[+!+[]]+[+[]]+[+[]]+[+[]])" which is 1e1000 and don't need division)
 map.i = `((+!![]/+[])+[])[${number(3)}]`;
 map.n = `((+!![]/+[])+[])[${number(4)}]`;
 
